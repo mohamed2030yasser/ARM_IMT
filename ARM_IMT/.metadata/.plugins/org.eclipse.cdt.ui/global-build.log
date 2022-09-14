@@ -1,0 +1,69 @@
+22:55:52 **** Incremental Build of configuration Release for project 02_GPIO_driver ****
+make all 
+Building file: ../src/MCAL/GPIO/GPIO_prg.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -Wall -Wextra  -g -DNDEBUG -DSTM32F401xE -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/MCAL/GPIO/GPIO_prg.d" -MT"src/MCAL/GPIO/GPIO_prg.o" -c -o "src/MCAL/GPIO/GPIO_prg.o" "../src/MCAL/GPIO/GPIO_prg.c"
+../src/MCAL/GPIO/GPIO_prg.c: In function 'GPIO_u8GetPINValue':
+../src/MCAL/GPIO/GPIO_prg.c:110:5: warning: variable 'PinValue' set but not used [-Wunused-but-set-variable]
+  u8 PinValue=0;
+     ^~~~~~~~
+../src/MCAL/GPIO/GPIO_prg.c: In function 'GPIO_vSetPinValue_Fast':
+../src/MCAL/GPIO/GPIO_prg.c:173:32: warning: unused parameter 'A_u8Port_Id' [-Wunused-parameter]
+ void GPIO_vSetPinValue_Fast(u8 A_u8Port_Id,u8 A_u8Pin_Num,u8 A_u8Value)
+                                ^~~~~~~~~~~
+../src/MCAL/GPIO/GPIO_prg.c:173:47: warning: unused parameter 'A_u8Pin_Num' [-Wunused-parameter]
+ void GPIO_vSetPinValue_Fast(u8 A_u8Port_Id,u8 A_u8Pin_Num,u8 A_u8Value)
+                                               ^~~~~~~~~~~
+../src/MCAL/GPIO/GPIO_prg.c:173:62: warning: unused parameter 'A_u8Value' [-Wunused-parameter]
+ void GPIO_vSetPinValue_Fast(u8 A_u8Port_Id,u8 A_u8Pin_Num,u8 A_u8Value)
+                                                              ^~~~~~~~~
+../src/MCAL/GPIO/GPIO_prg.c: In function 'GPIO_vSet_AF':
+../src/MCAL/GPIO/GPIO_prg.c:177:22: warning: unused parameter 'A_u8Port_Id' [-Wunused-parameter]
+ void GPIO_vSet_AF(u8 A_u8Port_Id,u8 A_u8Pin_Num,u8 A_u8AF)
+                      ^~~~~~~~~~~
+../src/MCAL/GPIO/GPIO_prg.c:177:37: warning: unused parameter 'A_u8Pin_Num' [-Wunused-parameter]
+ void GPIO_vSet_AF(u8 A_u8Port_Id,u8 A_u8Pin_Num,u8 A_u8AF)
+                                     ^~~~~~~~~~~
+../src/MCAL/GPIO/GPIO_prg.c:177:52: warning: unused parameter 'A_u8AF' [-Wunused-parameter]
+ void GPIO_vSet_AF(u8 A_u8Port_Id,u8 A_u8Pin_Num,u8 A_u8AF)
+                                                    ^~~~~~
+../src/MCAL/GPIO/GPIO_prg.c: In function 'GPIO_u8GetPINValue':
+../src/MCAL/GPIO/GPIO_prg.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/MCAL/GPIO/GPIO_prg.c
+ 
+Building file: ../src/_initialize_hardware.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -Wall -Wextra  -g -DNDEBUG -DSTM32F401xE -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/_initialize_hardware.d" -MT"src/_initialize_hardware.o" -c -o "src/_initialize_hardware.o" "../src/_initialize_hardware.c"
+../src/_initialize_hardware.c: In function 'SystemClock_Config':
+../src/_initialize_hardware.c:126:2: warning: #warning "Please check if the SystemClock_Config() settings match your board!" [-Wcpp]
+ #warning "Please check if the SystemClock_Config() settings match your board!"
+  ^~~~~~~
+Finished building: ../src/_initialize_hardware.c
+ 
+Building file: ../src/main.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -Wall -Wextra  -g -DNDEBUG -DSTM32F401xE -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32f4xx_hal_msp.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -Wall -Wextra  -g -DNDEBUG -DSTM32F401xE -DUSE_HAL_DRIVER -DHSE_VALUE=25000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -Wno-missing-prototypes -Wno-missing-declarations -MMD -MP -MF"src/stm32f4xx_hal_msp.d" -MT"src/stm32f4xx_hal_msp.d" -c -o "src/stm32f4xx_hal_msp.o" "../src/stm32f4xx_hal_msp.c"
+Finished building: ../src/stm32f4xx_hal_msp.c
+ 
+Building target: 02_GPIO_driver.elf
+Invoking: Cross ARM GNU C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -Wall -Wextra  -g -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"02_GPIO_driver.map" --specs=nano.specs -o "02_GPIO_driver.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dfsdm.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f401xe.o  ./src/MCAL/RCC/RCC_prg.o  ./src/MCAL/GPIO/GPIO_prg.o  ./src/_initialize_hardware.o ./src/main.o ./src/stm32f4xx_hal_msp.o   
+Finished building target: 02_GPIO_driver.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O ihex "02_GPIO_driver.elf"  "02_GPIO_driver.hex"
+Finished building: 02_GPIO_driver.hex
+ 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "02_GPIO_driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3182	     52	    264	   3498	    daa	02_GPIO_driver.elf
+Finished building: 02_GPIO_driver.siz
+ 

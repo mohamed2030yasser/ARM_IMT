@@ -1,0 +1,15 @@
+/*
+ * GPIO_int.h
+ *
+ *  Created on: Sep 13, 2022
+ *      Author: Diefco
+ */
+
+#ifndef MCAL_GPIO_GPIO_INT_H_
+#define MCAL_GPIO_GPIO_INT_H_
+
+
+
+
+
+#endif /* MCAL_GPIO_GPIO_INT_H_ */
