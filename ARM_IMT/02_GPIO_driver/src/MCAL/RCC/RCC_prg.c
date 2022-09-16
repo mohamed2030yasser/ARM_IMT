@@ -13,7 +13,9 @@
 #include "RCC_cfg.h"
 #include "RCC_int.h"
 
-
+/* 1- [ en HSX , choose BYP , select HSX ] >> Initialize
+ * 2- [ select bus ]
+ */
 
 void MRCC_vInit(void)
 {

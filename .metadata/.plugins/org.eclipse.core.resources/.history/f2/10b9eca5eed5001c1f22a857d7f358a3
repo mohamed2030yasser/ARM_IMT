@@ -1,0 +1,40 @@
+/*
+ * main.c
+ *
+ *  Created on: May 13, 2022
+ *      Author: Diefco
+ */
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main()
+{
+
+	             // 76543210;
+	DDRA =0b11111101;
+	PORTA=0b00000010; // active polup
+
+
+
+	while(1)
+	{
+		if((PINA&(1<<1))==0)
+		{
+			_delay_ms(10);
+			if((PINA&(1<<1))==0)
+			{
+				PORTA=0b00000011;
+			}//end if
+
+		}else
+				{
+					PORTA=0b00000010;
+				}
+
+
+	}
+
+
+
+}

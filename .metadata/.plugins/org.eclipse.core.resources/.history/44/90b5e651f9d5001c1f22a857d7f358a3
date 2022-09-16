@@ -1,0 +1,35 @@
+/*
+ * main.c
+ *
+ *  Created on: May 13, 2022
+ *      Author: Diefco
+ */
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main()
+{
+
+	             // 76543210;
+	DDRA =0b00001111;
+	PORTA=0b11110011; // active polup
+	DDRC =0b11111111;
+	DDRD =0b11111111;
+	PORTC=0b00000000;
+
+
+
+
+	/*
+	  1   2   3   4
+	  5   6   7   8
+	  9  10  11 12
+	  13 14 15 16
+	 */
+
+
+
+
+
+}

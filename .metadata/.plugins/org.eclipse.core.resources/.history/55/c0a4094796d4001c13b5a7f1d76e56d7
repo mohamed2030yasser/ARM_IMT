@@ -1,0 +1,84 @@
+/*
+ * main.c
+ *
+ *  Created on: May 13, 2022
+ *      Author: Diefco
+ */
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main()
+{
+	DDRA =0b01111111;
+
+
+	while(1)
+	{
+		 //port A0 output     18/05
+		//               87654321>>0
+		PORTA =0b00000000;
+		_delay_ms(500);
+		//               87654321>>1
+		PORTA =0b00000110;
+		_delay_ms(500);
+		//               87654321>>2
+		PORTA =0b01011011;
+		_delay_ms(500);
+		//               87654321>>3
+		PORTA =0b01001111;
+		_delay_ms(500);
+		//               87654321>>4
+		PORTA =0b01100110;
+		_delay_ms(500);
+		//               87654321>>5
+		PORTA =0b01100101;
+		_delay_ms(500);
+		//               87654321>>6
+		PORTA =0b01111101;
+		_delay_ms(500);
+		//               87654321>>7
+		PORTA =0b00000111;
+		_delay_ms(500);
+		//               87654321>>8
+		PORTA =0b01111111;
+		_delay_ms(500);
+		//               87654321>>9
+		PORTA =0b01101111;
+		_delay_ms(500);
+		//               87654321>>8
+		PORTA =0b01111111;
+		_delay_ms(500);
+		//               87654321>>7
+		PORTA =0b00000111;
+		_delay_ms(500);
+		//               87654321>>6
+		PORTA =0b01111101;
+		_delay_ms(500);
+		//               87654321>>5
+		PORTA =0b01100101;
+		_delay_ms(500);
+		//               87654321>>4
+		PORTA =0b01100110;
+		_delay_ms(500);
+		//               87654321>>3
+		PORTA =0b01001111;
+		_delay_ms(500);
+		//               87654321>>2
+		PORTA =0b01011011;
+		_delay_ms(500);
+		//               87654321>>1
+		PORTA =0b00000110;
+		_delay_ms(500);
+
+
+
+
+
+
+
+	}
+
+
+
+}
