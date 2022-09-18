@@ -1,0 +1,15 @@
+/*
+ * NVIC_prv.h
+ *
+ *  Created on: Sep 18, 2022
+ *      Author: Diefco
+ */
+
+#ifndef MCAL_NVIC_NVIC_PRV_H_
+#define MCAL_NVIC_NVIC_PRV_H_
+
+
+
+
+
+#endif /* MCAL_NVIC_NVIC_PRV_H_ */

@@ -1,0 +1,15 @@
+/*
+ * NVIC_init.h
+ *
+ *  Created on: Sep 18, 2022
+ *      Author: Diefco
+ */
+
+#ifndef MCAL_NVIC_NVIC_INIT_H_
+#define MCAL_NVIC_NVIC_INIT_H_
+
+
+
+
+
+#endif /* MCAL_NVIC_NVIC_INIT_H_ */

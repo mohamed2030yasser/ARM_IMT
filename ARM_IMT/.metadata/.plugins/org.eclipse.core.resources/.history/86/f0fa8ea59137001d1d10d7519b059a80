@@ -1,0 +1,19 @@
+
+
+
+#include "../../LIB/BIT_MATH.h"
+#include "../../LIB/STD_TYPES.h"
+
+#include "../RCC/RCC_cfg.h"
+#include "../RCC/RCC_int.h"
+#include "../RCC/RCC_prv.h"
+
+#include "NVIC_cfg.h"
+#include "NVIC_prv.h"
+#include "NVIC_init.h"
+
+
+void NVIC_vEnPri(u8 Pri_Id)
+{
+	NVI
+}
