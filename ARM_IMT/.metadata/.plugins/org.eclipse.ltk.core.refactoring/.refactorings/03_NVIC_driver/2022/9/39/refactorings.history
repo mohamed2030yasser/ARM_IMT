@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;03_NVIC_driver/src/MCAL/NVIC/NVIC_cfg&apos; to &apos;NVIC_cfg.h&apos;" description="Rename resource &apos;NVIC_cfg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/MCAL/NVIC/NVIC_cfg" name="NVIC_cfg.h" stamp="1663523707156" updateReferences="true"/>
+</session>

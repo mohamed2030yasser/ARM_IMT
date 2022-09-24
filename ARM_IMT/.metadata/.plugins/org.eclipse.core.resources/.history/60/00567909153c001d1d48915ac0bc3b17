@@ -1,0 +1,43 @@
+
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_TYPES.h"
+
+#include "MCAL/RCC/RCC_int.h"
+#include "MCAL/GPIO/GPIO_int.h"
+#include "MCAL/NVIC/NVIC_init.h"
+#include "MCAL/EXTI/EXTI_int.h"
+
+
+int main(void)
+{
+	MRCC_vInit();
+	MRCC_vEnClock(RCC_AHB1, RCC_EN_GPIOA);
+
+
+	MGPIO_Config_t led_pin_cfg = {
+	.Port 		= GPIO_PORTA,
+	.Pin 		= 1,
+	.Mode 		= GPIO_MODE_GPOUT,
+	.OutSpeed 	= GPIO_LOW_SPEED,
+	.OutType 	= GPIO_PUSHPULL,
+	.InputPull  = GPIO_NO_PULL,
+	};
+
+	GPIO_vInit(&led_pin_cfg);
+
+	MGPIO_Config_t Button_pin_cfg = {
+	.Port 		= GPIO_PORTA,
+	.Pin 		= 0,
+	.Mode 		= GPIO_MODE_INPUT,
+	//.OutSpeed 	= GPIO_LOW_SPEED,
+	//.OutType 	= GPIO_PUSHPULL,
+	.InputPull  = GPIO_PULL_UP,
+	};
+
+	GPIO_vInit(&Button_pin_cfg);
+
+	while(1)
+	{
+
+	}
+}

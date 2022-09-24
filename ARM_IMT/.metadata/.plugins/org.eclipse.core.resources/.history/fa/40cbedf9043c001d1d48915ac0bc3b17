@@ -1,0 +1,15 @@
+/*
+ * EXTI_int.h
+ *
+ *  Created on: Sep 24, 2022
+ *      Author: Diefco
+ */
+
+#ifndef MCAL_EXTI_EXTI_INT_H_
+#define MCAL_EXTI_EXTI_INT_H_
+
+
+
+
+
+#endif /* MCAL_EXTI_EXTI_INT_H_ */

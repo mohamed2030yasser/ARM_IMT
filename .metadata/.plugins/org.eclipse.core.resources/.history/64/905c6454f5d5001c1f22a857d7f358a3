@@ -1,0 +1,69 @@
+/*
+ * main.c
+ *
+ *  Created on: May 13, 2022
+ *      Author: Diefco
+ */
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main()
+{
+
+	             // 76543210;
+	DDRA =0b00001111;
+	DDRC =0b11111111;
+	DDRD =0b11111111;
+	PORTA=0b11111111; // active polup
+	int i,j;
+
+	/*
+	  1   2   3   4
+	  5   6   7   8
+	  9  10  11 12
+	  13 14 15 16
+	 */
+
+	while(1)
+	{
+		for(i =0 ;i<4;i++)
+		{
+			PORTA=PORTA & (~(1<<i));
+			_delay_ms(500);
+			for(j=4;j<8;j++)
+			{
+				if((PINA&(1<<j))==1)
+						{
+
+							while((PINA&(1<<j))==1)
+							{
+								if(i==0)
+								{
+									PORTC=PORTC & (1<<(j-4));
+								}else if(i==1)
+										{
+									    	PORTC=PORTC & (1<<(j));
+										}else if(i==2)
+												{
+													PORTD=PORTD & (1<<(j-4));
+												}else if(i==2)
+													{
+														PORTD=PORTD & (1<<(j));
+													}
+
+							}
+							PORTC=0x00;
+							PORTD=0x00;
+
+						}
+			}
+		}
+
+
+
+	}
+
+
+
+}

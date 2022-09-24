@@ -1,0 +1,42 @@
+18:09:34 **** Incremental Build of configuration Release for project 01_Dio_basic ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: 01_Dio_basic.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,01_Dio_basic.map -mmcu=atmega32 -o "01_Dio_basic.elf"  ./main.o   
+Finished building target: 01_Dio_basic.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S 01_Dio_basic.elf  >"01_Dio_basic.lss"
+Finished building: 01_Dio_basic.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex 01_Dio_basic.elf  "01_Dio_basic.hex"
+Finished building: 01_Dio_basic.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex 01_Dio_basic.elf  "01_Dio_basic.eep"
+Finished building: 01_Dio_basic.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 01_Dio_basic.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     288 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+18:09:35 Build Finished (took 696ms)
+
