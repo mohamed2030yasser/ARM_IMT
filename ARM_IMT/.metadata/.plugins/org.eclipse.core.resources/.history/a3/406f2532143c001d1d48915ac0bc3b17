@@ -1,0 +1,19 @@
+
+#include "LIB/BIT_MATH.h"
+#include "LIB/STD_TYPES.h"
+#include "MCAL/RCC/RCC_int.h"
+#include "MCAL/GPIO/GPIO_int.h"
+#include "MCAL/NVIC/NVIC_init.h"
+#include "MCAL/EXTI/EXTI_int.h"
+
+
+int main(void)
+{
+	MRCC_vInit();
+	MRCC_vEnClock(RCC_AHB1, RCC_EN_GPIOA);
+
+	while(1)
+	{
+
+	}
+}

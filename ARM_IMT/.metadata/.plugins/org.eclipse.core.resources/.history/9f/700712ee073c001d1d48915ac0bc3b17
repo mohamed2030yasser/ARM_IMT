@@ -1,0 +1,15 @@
+/*
+ * EXTI_cfg.h
+ *
+ *  Created on: Sep 24, 2022
+ *      Author: Diefco
+ */
+
+#ifndef MCAL_EXTI_EXTI_CFG_H_
+#define MCAL_EXTI_EXTI_CFG_H_
+
+#define EXTI_line_0_enable			enable
+#define EXTI_line_0_trigger
+
+
+#endif /* MCAL_EXTI_EXTI_CFG_H_ */

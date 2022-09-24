@@ -1,0 +1,25 @@
+/*
+ * NVIC_init.h
+ *
+ *  Created on: Sep 18, 2022
+ *      Author: Diefco
+ */
+
+#ifndef MCAL_NVIC_NVIC_INIT_H_
+#define MCAL_NVIC_NVIC_INIT_H_
+
+#define GROUP_16_SUB_NON	0b000
+#define GROUP_8_SUB_2		0b100
+#define GROUP_4_SUB_4		0b101
+#define GROUP_2_SUB_8		0b110
+#define GROUP_NON_SUB_16	0b111
+
+void NVIC_vEnable_Pri(u8 Pri_Id);
+void NVIC_vDisable_Pri(u8 Pri_Id);
+void NVIC_vSet_pending_Pri(u8 Pri_Id);
+void NVIC_vClear_pending_Pri(u8 Pri_Id);
+u8 NVIC_U8GetActive(u8 Pri_Id);
+
+
+
+#endif /* MCAL_NVIC_NVIC_INIT_H_ */
